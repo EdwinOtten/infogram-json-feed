@@ -3,8 +3,8 @@ name: Update exchange rates
 on:
   schedule:
     # Runs every 10 minutes during Dutch office hours.
-    # UTC cron: 07:00-16:59 (Amsterdam/CEST is UTC+2 in summer, UTC+1 in winter)
-    - cron: '*/10 7-16 * * 1-5'
+    - cron: '7/10 8-16 * * 1-5'
+      timezone: "Europe/Amsterdam"
   workflow_dispatch:
 
 permissions:
